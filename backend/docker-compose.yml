@@ -1,0 +1,13 @@
+services:
+  mysql:
+    image: mysql
+    container_name: inflearn-clone-db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${REAL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${REAL_DATABASE}
+    volumes:
+      - inflearn_clone_db:/var/lib/mysql
+volumes:
+  inflearn_clone_db:
