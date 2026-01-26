@@ -9,7 +9,6 @@ import clone.inflearn.backend.domain.account.model.Account;
 import clone.inflearn.backend.domain.account.port.AccountRepository;
 import jakarta.transaction.Transactional;
 import java.util.Set;
-import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
