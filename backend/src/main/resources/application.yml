@@ -16,3 +16,21 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
         naming:
           physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+  security:
+    oauth2:
+      client:
+        registration:
+          kakao:
+            client-id:
+            client-secret:
+            authorization-grant-type: authorization_code
+            scope: openid, profile_nickname, profile_image
+            redirect-uri:
+        provider:
+          kakao:
+            issuer-uri: https://kauth.kakao.com
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.security.oauth2: DEBUG
+    org.springframework.web.client.RestTemplate: DEBUG
