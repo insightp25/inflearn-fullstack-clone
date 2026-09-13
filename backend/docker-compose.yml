@@ -5,8 +5,8 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: ${REAL_ROOT_PASSWORD}
-      MYSQL_DATABASE: ${REAL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
     volumes:
       - inflearn_clone_db:/var/lib/mysql
 volumes:

@@ -38,3 +38,6 @@ out/
 
 ### ENV ###
 .env
+
+### PROFILE FILES ###
+application-*.yml
